@@ -1,0 +1,34 @@
+.header-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  padding: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+  align-items: center;
+  color: white;
+}
+
+.header-wrapper .logo .brand {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header-wrapper .nav-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-wrapper .nav-wrapper .activeClass {
+  border-bottom: 1px solid red;
+}
+
+.header-wrapper .nav-wrapper .navigation,
+.header-wrapper .nav-wrapper .navigation a,
+.header-wrapper .nav-wrapper .navigation a:focus,
+.header-wrapper .nav-wrapper .navigation a:hover {
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+}

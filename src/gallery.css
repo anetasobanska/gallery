@@ -2,10 +2,13 @@
   -webkit-column-count: 3;
   -moz-column-count: 3;
   column-count: 3;
-  -webkit-column-width: 33%;
-  -moz-column-width: 33%;
-  column-width: 33%;
+  -webkit-column-width: 30%;
+  -moz-column-width: 30%;
+  column-width: 30%;
   padding: 0 12px;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 .gallery .pics {
   -webkit-transition: all 350ms ease;
@@ -14,7 +17,7 @@
   margin-bottom: 12px;
 }
 .gallery .pics:hover {
-  filter: opacity(0.8);
+  filter: opacity(0.6);
 }
 @media (max-width: 991px) {
   .gallery {

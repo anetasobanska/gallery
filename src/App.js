@@ -1,12 +1,18 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Header from './Header';
 import Gallery from './Gallery';
+import Contact from './Contact';
 
 function App() {
   return (
-    <>
-     <h1 style={{textAlign: 'left', marginLeft: '12px'}}>Jean Herve Roux</h1>
-     <Gallery />
-    </>
+     <Router>
+      <Header />
+      <Switch>
+        <Route path="/" component={Gallery} exact />
+        <Route path="/contact" component={Contact} />
+      </Switch>
+    </Router>
   );
 }
 
