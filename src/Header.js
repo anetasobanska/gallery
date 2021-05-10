@@ -1,6 +1,5 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
-import { Drawer, List, ListItem, ListItemIcon, ListItemText, Container, Typography } from "@material-ui/core";
 import HomeIcon from '@material-ui/icons/Home';
 import EmailIcon from '@material-ui/icons/Email';
 import './Header.css';

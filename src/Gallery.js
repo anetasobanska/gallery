@@ -1,4 +1,6 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './gallery.css';
 import CloseIcon from '@material-ui/icons/Close';
 import Img1 from './img/img1.jpg';
@@ -34,6 +36,13 @@ import Img30 from './img/img30.jpg';
 import Img31 from './img/img31.jpg';
 
 const Gallery = () => {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 2000,
+            delay: 50
+        },);
+    }, [])
 
     let data = [
         {
@@ -179,7 +188,7 @@ const Gallery = () => {
                 {data.map((item, index)=>{
                     return(
                         <div className="pics" key={index} onClick={()=>getImg(item.imgSrc)}>
-                            <img src={item.imgSrc} style={{width:'100%'}}/>
+                            <img data-aos={"zoom-in"} src={item.imgSrc} style={{width:'100%'}}/>
                         </div>
                     )
                 })}
