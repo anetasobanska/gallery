@@ -1,9 +1,9 @@
 .container {
-  width: 40%;
-  padding: 12px 24px 24px 24px;
+  width: 60%;
+  padding: 12px 12px 12px 12px;
   margin: 0 auto;
   margin-top: 15px;
-  background: #5e5f5f;
+  background: #272727;
   border-radius: 4px;
 }
 label {
@@ -53,13 +53,8 @@ input[type="submit"]:hover {
 .center {
   text-align: center;
 }
-@media only screen and (min-width: 400px) and (max-width: 699px) {
+@media only screen and (min-width: 100px) and (max-width: 699px) {
   .container {
-    width: 70%;
-  }
-}
-@media only screen and (min-width: 100px) and (max-width: 399px) {
-  .container {
-    width: 70%;
+    width: 85%;
   }
 }
