@@ -8,7 +8,9 @@ const Contact = () => {
 
     emailjs.sendForm('service_t0q14mq', 'template_e31z9ud', e.target, 'user_4spjTWDT28LBJIviz1mry')
       .then((result) => {
-          console.log(result.text);
+        //   console.log(result.text);
+        let formMess = document.querySelector(".form-message");
+        formMess.style.opacity = "1";
       }, (error) => {
           console.log(error.text);
       });
@@ -27,6 +29,7 @@ const Contact = () => {
                 <div className="center">
                     <input type="submit" value="Envoyer" />
                 </div>
+                <div className="form-message">Votre message a été envoyé.</div>
             </form>
         </div>
     )

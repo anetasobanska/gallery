@@ -58,3 +58,13 @@ input[type="submit"]:hover {
     width: 85%;
   }
 }
+.form-message {
+  margin-top: 10px;
+  padding: 12px;
+  opacity: 0;
+  transition: 0.2s ease;
+  border-radius: 4px;
+  background-color: seagreen;
+  color: #ffffff;
+  text-align: center;
+}
